@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 @section('content')
     <style>
@@ -26,10 +25,10 @@
 
         .controls {
             /* position: absolute;
-                                                            width: 100%;
-                                                            display: flex;
-                                                            justify-content: space-between;
-                                                            top: 45%; */
+                                                                width: 100%;
+                                                                display: flex;
+                                                                justify-content: space-between;
+                                                                top: 45%; */
         }
 
         button {
@@ -51,7 +50,7 @@
 
             <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
                 <div x-data="{ open: false }"
-                    class="flex flex-col  xl:w-8/12 px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+                    class="flex flex-col  xl:w-9/12 px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                     <div class="p-4 flex flex-row items-center justify-end">
                         <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
                             <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -76,6 +75,8 @@
                             href="/blog">Blog</a>
                         <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
                             href="/faq">FAQ</a>
+                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
+                            href="/apostille-service">Apostille Services</a>
                         <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
                             href="/contactUs">Contact Us</a>
                         <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"

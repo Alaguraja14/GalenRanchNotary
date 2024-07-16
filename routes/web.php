@@ -96,11 +96,15 @@ Route::get('/sitemap.xml', function () {
     return view('siteMap.index');
 });
 
+Route::get('/apostille-service', function () {
+    return view('apostille_service');
+});
 
 
 
 
 
 Route::post('/sendemail',[SendEmailController::class, 'send'])->name('sendemail');
+Route::post('/sendemailApostille',[SendEmailController::class, 'sendemailApostille'])->name('sendemailApostille');
 Route::post('/sendsubscribeemail',[SubscribeController::class, 'send'])->name('sendSubscribeemail');
 Route::post('/sendBlogEmail',[BlogController::class, 'sendCompleteGuideForm'])->name('sendBlogEmail');
