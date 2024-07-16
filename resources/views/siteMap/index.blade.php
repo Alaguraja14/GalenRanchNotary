@@ -1,0 +1,53 @@
+<?php echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
+
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/services</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/review</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/blog</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/Complete-Guide-How-We-Will-Save-Your-Documents-and-Business</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/annual-review</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/will-and-a-trust-differences</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/steps-for-selling-property-in-india-and-repatriation-of-money-to-usa</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/4-main-areas-of-focus-for-the-first-quarter-2022
+</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/how-to-change-your-legal-name-in-california-and-acorss-the-us</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/estate-planning-contains-following-documents</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/estate-planning-will-trust-advance-health-care-directive-2</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/power-of-attorney-to-india-steps</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/usa-to-india-and-india-to-usa-travel-requirements</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/life-insurance-tips</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/current-outbreak-of-COVID-19</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/faq</loc>
+    </sitemap>
+</sitemapindex>

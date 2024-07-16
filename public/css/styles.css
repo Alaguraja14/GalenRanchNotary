@@ -1,0 +1,27 @@
+    .backgroundGradient {
+        background: linear-gradient(90deg, #ECE9E6 0%, #FFFFFF 100%);
+    }
+    
+    .bgFFFDFD {
+        background: #FFFDFD;
+    }
+    
+    .textED9393 {
+        color: #ED9393;
+    }
+    
+    .text737373 {
+        color: #737373;
+    }
+    
+    .black252B42 {
+        color: #252B42;
+    }
+    
+    .bgED9393 {
+        background: #ED9393;
+    }
+    
+    .reviews {
+        height: 500px;
+    }

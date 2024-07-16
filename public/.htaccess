@@ -1,0 +1,39 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+    RewriteEngine On
+    
+    Redirect 301 /wp-customer-reviews https://www.galeranchnotary.com
+    Redirect 301 /power-of-attorney-to-india-steps/feed https://www.galeranchnotary.com
+    Redirect 301 /estate-planning-will-trust-advance-health-care-directive https://www.galeranchnotary.com
+    Redirect 301 /faq/what-is-apostille https://www.galeranchnotary.com
+    Redirect 301 /faq/5-does-gale-ranch-notary-offer-notary-signing-guarantee https://www.galeranchnotary.com
+    Redirect 301 /wordpress?page_id=94?utm=trivalleydesi https://www.galeranchnotary.com
+    Redirect 301 /gale-ranch-notary-apostille-and-financial-services https://www.galeranchnotary.com
+    Redirect 301 /gale-ranch-notary-apostille-and-financial-services/ https://www.galeranchnotary.com   
+   
+    Redirect 301 /home https://www.galeranchnotary.com
+    Redirect 301 /author/galeranchnotary_62f7u5 https://www.galeranchnotary.com   
+
+
+    Redirect 301 /?page_id=356 https://www.galeranchnotary.com
+    Redirect 301 /?utm_source=trivalleydesi.com https://www.galeranchnotary.com
+    Redirect 301 /?s={search_term_string} https://www.galeranchnotary.com
+    Redirect 301 /?utm=trivalleydesi.com https://www.galeranchnotary.com   
+
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
