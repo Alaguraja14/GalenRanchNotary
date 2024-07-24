@@ -83,6 +83,62 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #ED9393;
         }
+
+        .drop-container {
+            position: relative;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border-radius: 10px;
+            border: 2px dashed #555;
+            color: #444;
+            cursor: pointer;
+            transition: background .2s ease-in-out, border .2s ease-in-out;
+        }
+
+        .drop-container:hover {
+            background: #eee;
+            border-color: #111;
+        }
+
+        .drop-container:hover .drop-title {
+            color: #222;
+        }
+
+        .drop-title {
+            color: #444;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            transition: color .2s ease-in-out;
+        }
+
+        input[type=file] {
+            max-width:100%;
+            color: #444;
+            padding: 5px;
+            background: #fff;
+            border-radius: 10px;
+            border: 1px solid #555;
+        }
+
+        input[type=file]::file-selector-button {
+            
+            border: none;
+            background: #084cdf;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            transition: background .2s ease-in-out;
+        }
+
+        input[type=file]::file-selector-button:hover {
+            background: #0d45a5;
+        }
     </style>
 </head>
 
@@ -116,7 +172,7 @@
                             href="/review">Reviews</a>
                         <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm  md:mt-0"
                             href="/blog">Blog</a>
-                            <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm textED9393 font-semibold md:mt-0"
+                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm textED9393 font-semibold md:mt-0"
                             href="/apostille-service">Apostille Services</a>
                         <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
                             href="/faq">FAQ</a>
@@ -152,7 +208,7 @@
                                 <p>{{ $message }}</p>
                             </div>
                         @endif
-                        <div class='grid md:grid-cols-2 grid-cols-1 md:gap-4'>
+                        <div class='grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-6'>
                             <div class="relative">
                                 <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">First Name
                                     <span class="text-litePink font-semibold">*</span></label>
@@ -179,7 +235,7 @@
                             </div>
                         </div>
 
-                        <div class='grid md:grid-cols-2 grid-cols-1 md:gap-4'>
+                        <div class='grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-6'>
                             <div class="relative">
                                 <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">Phone
                                     Number<span class="text-litePink font-semibold">*</span></label>
@@ -207,7 +263,7 @@
                             </div>
                         </div>
 
-                        <div class='grid md:grid-cols-2 grid-cols-1 md:gap-4'>
+                        <div class='grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-6'>
                             <div class="relative">
                                 <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">Street
                                     Address
@@ -236,7 +292,7 @@
                         </div>
 
                         <div class="relative">
-                            <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">What foreign
+                            <label class="md:absolute md:px-2 md:ml-2 -mt-3 font-medium text-gray-600 bg-white">What foreign
                                 country are the documents inteded for?
                                 <span class="text-litePink font-semibold">*</span></label>
                             <input type="text" required name="doc_inteded" value="{{ old('doc_inteded') }}"
@@ -274,7 +330,7 @@
                         </div>
 
                         <div class="relative">
-                            <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">How many
+                            <label class="md:absolute md:px-2 md:ml-2 -mt-3 font-medium text-gray-600 bg-white">How many
                                 documents do you need an apostille for?
                                 <span class="text-litePink font-semibold">*</span></label>
                             <input type="text" required name="doc_count" value="{{ old('doc_count') }}"
@@ -288,7 +344,7 @@
                         </div>
 
                         <div class="relative">
-                            <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">What type(s) of
+                            <label class="md:absolute md:px-2 md:ml-2 -mt-3 font-medium text-gray-600 bg-white">What type(s) of
                                 documents do you need an apostille/legalization for?
                                 <span class="text-litePink font-semibold">*</span></label>
                             <input type="text" required name="doc_type" value="{{ old('doc_type') }}"
@@ -302,9 +358,16 @@
                         </div>
 
                         <div class="flex flex-col w-full  items-start justify-center bg-grey-lighter">
-                            <label class="mt-4 px-2 font-medium text-gray-600 bg-white mb-2">Upload your documents
+                            <label class="mt-4 px-2 font-medium text-gray-600 bg-white mb-4">Upload your documents
                                 <span class="text-litePink font-semibold">*</span></label>
-                            <label
+
+                            <label for="images" class="drop-container py-10 px-10 md:w-7/12 w-full" id="dropcontainer">
+                                <span class="drop-title">Select a file</span>
+                                
+                                <input type="file" name="file" id="file" required>
+                            </label>
+
+                            {{-- <label
                                 class="w-64 flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-xl tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue-500 hover:text-white">
                                 <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20">
@@ -313,8 +376,8 @@
                                 </svg>
                                 <span class="mt-2 text-base leading-normal">Select a file</span>
                                 <input type='file' name="file" class="hidden" />
-                            </label>
-                            <span class="text-litePink font-semibold mt-3">Max upload file size 5MB. Allowed File Type
+                            </label> --}}
+                            <span class="text-litePink font-semibold text-sm mt-3">Max upload file size 5MB. Allowed File Type
                                 - jpg, .jpeg, .pdf, .doc, .docx.</span>
                             @if ($errors->has('file'))
                                 <span class="py-2 mt-2 text-red-600 text-sm font-normal px-2" role="alert">
@@ -322,7 +385,7 @@
                                 </span>
                             @endif
                         </div>
-                        <div class="relative mb-4 mt-4"> {!! NoCaptcha::display() !!}
+                        <div class="relative mb-4 mt-4 w-full overflow-auto"> {!! NoCaptcha::display() !!}
                             @if ($errors->has('g-recaptcha-response'))
                                 <span class="py-2 mt-2 text-red-600 text-sm font-normal px-2"
                                     role="alert">{{ $errors->first('g-recaptcha-response') }}</span>
