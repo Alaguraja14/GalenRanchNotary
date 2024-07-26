@@ -212,7 +212,7 @@
                             <div class="relative">
                                 <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">First Name
                                     <span class="text-litePink font-semibold">*</span></label>
-                                <input type="text" required name="fname" value="{{ old('fname') }}"
+                                <input type="text" name="fname" value="{{ old('fname') }}"
                                     class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-litePink"
                                     placeholder="John">
                                 @if ($errors->has('fname'))
@@ -239,7 +239,7 @@
                             <div class="relative">
                                 <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">Phone
                                     Number<span class="text-litePink font-semibold">*</span></label>
-                                <input type="text" required name="phone_number" value="{{ old('phone_number') }}"
+                                <input type="text"  name="phone_number" value="{{ old('phone_number') }}"
                                     class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-litePink"
                                     placeholder="Morrison">
                                 @if ($errors->has('phone_number'))
@@ -252,7 +252,7 @@
                                 <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">Email
                                     Address
                                     <span class="text-litePink font-semibold">*</span></label>
-                                <input type="email" required name="email" value="{{ old('email') }}"
+                                <input type="email"  name="email" value="{{ old('email') }}"
                                     class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-litePink"
                                     placeholder="janedoe@email.com">
                                 @if ($errors->has('email'))
@@ -268,7 +268,7 @@
                                 <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">Street
                                     Address
                                     <span class="text-litePink font-semibold">*</span></label>
-                                <input type="text" required name="address" value="{{ old('address') }}"
+                                <input type="text"  name="address" value="{{ old('address') }}"
                                     class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-litePink"
                                     placeholder="132,silver street">
                                 @if ($errors->has('address'))
@@ -280,7 +280,7 @@
                             <div class="relative">
                                 <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">Zip Code
                                     <span class="text-litePink font-semibold">*</span></label>
-                                <input type="text" required name="zipcode" value="{{ old('zipcode') }}"
+                                <input type="text"  name="zipcode" value="{{ old('zipcode') }}"
                                     class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-litePink"
                                     placeholder="50210">
                                 @if ($errors->has('zipcode'))
@@ -293,9 +293,9 @@
 
                         <div class="relative">
                             <label class="md:absolute md:px-2 md:ml-2 -mt-3 font-medium text-gray-600 bg-white">What foreign
-                                country are the documents inteded for?
+                                country are the documents intended for?
                                 <span class="text-litePink font-semibold">*</span></label>
-                            <input type="text" required name="doc_inteded" value="{{ old('doc_inteded') }}"
+                            <input type="text"  name="doc_inteded" value="{{ old('doc_inteded') }}"
                                 class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-litePink"
                                 placeholder="Brazil">
                             @if ($errors->has('doc_inteded'))
@@ -310,17 +310,22 @@
                                 <span class="text-litePink font-semibold">*</span></label>
                             <div class="flex space-x-5 mt-4">
                                 <label>
-                                    <input type="radio" name="language" value="yes" class="option"> Yes
+                                    <input type="radio" name="language" value="yes" class="option" {{ old('language') == 'yes' ? 'checked' : '' }}> Yes
                                 </label>
                                 <label>
-                                    <input type="radio" name="language" value="no" class="option"> No
+                                    <input type="radio" name="language" value="no" class="option" {{ old('language') == 'no' ? 'checked' : '' }}> No
                                 </label>
                             </div>
                             <br>
                             <div id="textBoxContainer" style="display: none;">
-                                <input type="text" id="reasonTextBox" name="language_name"
+                                <input type="text" id="reasonTextBox" name="language_name" value="{{ old('language_name') }}"
                                     class="block w-full px-4 py-4 mt-1 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-litePink"
-                                    placeholder="French">
+                                    placeholder="French" required>
+                                    @if ($errors->has('language_name'))
+                                <span class="py-2 mt-2 text-red-600 text-sm font-normal px-2" role="alert">
+                                    {{ $errors->first('language_name') }}.
+                                </span>
+                            @endif
                             </div>
                             @if ($errors->has('language'))
                                 <span class="py-2 mt-2 text-red-600 text-sm font-normal px-2" role="alert">
@@ -333,7 +338,7 @@
                             <label class="md:absolute md:px-2 md:ml-2 -mt-3 font-medium text-gray-600 bg-white">How many
                                 documents do you need an apostille for?
                                 <span class="text-litePink font-semibold">*</span></label>
-                            <input type="text" required name="doc_count" value="{{ old('doc_count') }}"
+                            <input type="text"  name="doc_count" value="{{ old('doc_count') }}"
                                 class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-litePink"
                                 placeholder="2">
                             @if ($errors->has('doc_count'))
@@ -347,7 +352,7 @@
                             <label class="md:absolute md:px-2 md:ml-2 -mt-3 font-medium text-gray-600 bg-white">What type(s) of
                                 documents do you need an apostille/legalization for?
                                 <span class="text-litePink font-semibold">*</span></label>
-                            <input type="text" required name="doc_type" value="{{ old('doc_type') }}"
+                            <input type="text"  name="doc_type" value="{{ old('doc_type') }}"
                                 class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-litePink"
                                 placeholder="Driving license">
                             @if ($errors->has('doc_type'))
@@ -364,7 +369,7 @@
                             <label for="images" class="drop-container py-10 px-10 md:w-7/12 w-full" id="dropcontainer">
                                 <span class="drop-title">Select a file</span>
                                 
-                                <input type="file" name="file" id="file" required>
+                                <input type="file" name="file" id="file" >
                             </label>
 
                             {{-- <label
@@ -589,9 +594,11 @@
                 if ($(this).val() === 'yes') {
                     // Show the text box container
                     $('#textBoxContainer').show();
+                    $('#reasonTextBox').prop('required', true);
                 } else {
                     // Hide the text box container if 'No' is clicked
                     $('#textBoxContainer').hide();
+                    $('#reasonTextBox').prop('required', false);
                 }
             });
 

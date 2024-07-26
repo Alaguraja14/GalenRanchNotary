@@ -119,6 +119,8 @@
                             href="/blog">Blog</a>
                         <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm textED9393 font-semibold md:mt-0"
                             href="/faq">FAQ</a>
+                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
+                            href="/apostille-service">Apostille Services</a>
                         <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
                             href="/contactUs">Contact Us</a>
                     </nav>
@@ -168,7 +170,7 @@
                                                         <li>Medical Power of Attorney (one for each spouse)</li>
                                                         <li>Assignment of Personal Property to the trust</li>
                                                         <li>Deeds. One deed is included in the price but additional
-                                                            properties cost exra.</li>
+                                                            properties cost extra.</li>
                                                     </ol>
                                                     <p class="mt-4">This includes lookup of the chain of title,
                                                         preparation of the deed, the Preliminary Change of Owner Form,
