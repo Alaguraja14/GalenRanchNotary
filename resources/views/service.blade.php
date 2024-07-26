@@ -10,7 +10,8 @@
     <meta name="robots" content="index,follow" />
     <meta property="og:site_name" content="Gale Ranch Notary">
     <meta property="og:title" content="Gale Ranch Notary">
-    <meta property="og:description" content="Expert Apostille, Trusts, Immigration & Financial Services - Trusted solutions at 
+    <meta property="og:description"
+        content="Expert Apostille, Trusts, Immigration & Financial Services - Trusted solutions at 
     Gale Ranch Notary. Visit for more details">
     <meta property="og:image" content="https://www.galeranchnotary.com/images/Banner.png">
     <meta property="og:type" content="website" />
@@ -39,11 +40,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TGK99DB0N"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-7TGK99DB0N');
@@ -117,6 +121,8 @@
                             href="/blog">Blog</a>
                         <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
                             href="/faq">FAQ</a>
+                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
+                            href="/apostille-service">Apostille Services</a>
                         <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
                             href="/contactUs">Contact Us</a>
                     </nav>

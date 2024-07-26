@@ -50,4 +50,7 @@
     <sitemap>
         <loc>https://www.galeranchnotary.com/faq</loc>
     </sitemap>
+    <sitemap>
+        <loc>https://www.galeranchnotary.com/apostille-service</loc>
+    </sitemap>
 </sitemapindex>

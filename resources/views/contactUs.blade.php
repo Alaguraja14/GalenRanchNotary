@@ -43,11 +43,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TGK99DB0N"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-7TGK99DB0N');
@@ -95,7 +98,7 @@
         <div class="w-11/12 mx-auto py-2 mt-4 bgFFFDFD shadow-lg rounded-lg">
             <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
                 <div x-data="{ open: false }"
-                    class="flex flex-col lg:w-7/12 md:w-10/12 px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+                    class="flex flex-col lg:w-8/12 md:w-10/12 px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                     <div class="p-4 flex flex-row items-center justify-end">
                         <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
                             @click="open = !open">
@@ -121,6 +124,8 @@
                             href="/blog">Blog</a>
                         <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
                             href="/faq">FAQ</a>
+                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
+                            href="/apostille-service">Apostille Services</a>
                         <a class="leading-6 tracking-wider  px-4 py-2 mt-2 text-sm text-litePink font-semibold md:mt-0 hover:animate-bounce"
                             href="/contactUs">Contact Us</a>
                     </nav>
@@ -152,14 +157,14 @@
                             <div class="w-12 h-0.5 rounded-full bgED9393 inline-flex"></div>
                         </div>
                         <!-- @if ($errors->any())
-    <div class="alert alert-danger text-red-600">
+<div class="alert alert-danger text-red-600">
                                     <ul>
         @foreach ($errors->all() as $error)
 <li>{{ $error }}</li>
 @endforeach
                                     </ul>
                                 </div>
-    @endif-->
+@endif-->
                         <div class="relative mb-6">
                             <label for="name" class="leading-7 text-sm font-semibold tracking-wide">Name<span
                                     class="text-red-600 ml-1">*</span></label>

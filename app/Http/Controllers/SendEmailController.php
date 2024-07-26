@@ -64,17 +64,23 @@ class SendEmailController extends Controller
             'address' => 'required',
             'zipcode' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/',
             'doc_inteded' => 'required',
-            'language' => 'required',
-            'language_name'=>'regex:/^[\pL\s]+$/u',
+            'language' => 'required|in:yes,no',
+            'language_name' => 'regex:/^[\pL\s]+$/u',
             'doc_count' => 'required',
             'doc_type' => 'required',
             'file' => 'required|file|max:5120|mimes:jpeg,jpg,pdf,doc,docx',
         ], [
-            'name.regex' => 'Please enter a valid name',
+            'fname.required' => 'First Name is required',
+            'fname.regex' => 'Please enter a valid name',
+            'lname.regex' => 'Please enter a valid name',
             'email.email' => 'Please enter a valid email id',
             'phone_number.regex' => 'Please enter a valid phone number',
-            'zipcode' => 'Please enter a valid zipcode',
-            'file' => 'Please Upload a valid file',
+            'zipcode.regex' => 'Please enter a valid zipcode',
+            'doc_inteded' => 'Documents intended is required',
+            'language_name.regex' => 'Please enter a valid language',
+            'file.required' => 'Please choose a file to upload.',
+            'file.file' => 'The uploaded file must be a valid file.',
+            'file.max' => 'The maximum file size allowed is 5MB.',
         ]);
 
         $messages = [
@@ -106,7 +112,7 @@ class SendEmailController extends Controller
                 'zipcode' =>  $request->zipcode,
                 'doc_inteded' =>  $request->doc_inteded,
                 'language' =>  $request->language,
-                'language_name'=>$request->language_name,
+                'language_name' => $request->language_name,
                 'doc_count' =>  $request->doc_count,
                 'doc_type' =>  $request->doc_type,
             );
