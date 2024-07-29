@@ -166,14 +166,14 @@
                         class="w-7/12 mx-auto flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-between md:flex-row">
                         <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
                             href="/">Home</a>
+                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm textED9393 font-semibold md:mt-0"
+                            href="/apostille-service">Apostille Services</a>
                         <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
                             href="/services">Services</a>
                         <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
                             href="/review">Reviews</a>
                         <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm  md:mt-0"
                             href="/blog">Blog</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm textED9393 font-semibold md:mt-0"
-                            href="/apostille-service">Apostille Services</a>
                         <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
                             href="/faq">FAQ</a>
                         <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
@@ -192,10 +192,10 @@
                     Personal & Business Documents.</span></div>
             {{-- <img src="images\apostille-service.jpg" alt="apostille services" class='w-full h-full object-cover'/> --}}
         </div>
-        <div class="flex flex-col items-center justify-between w-full px-10 pt-5 pb-20 lg:pt-0 lg:flex-row">
+        <div class="flex flex-col items-center justify-between w-full md:px-10 px-4 pt-5 pb-20 lg:pt-0 lg:flex-row">
             <div class="relative z-10 mx-auto w-full max-w-8/12 mt-20 lg:mt-0 lg:w-10/12">
                 <div
-                    class="relative z-10 mt-4 flex flex-col items-start justify-start md:p-10 sm:p-8 p-6 bg-white shadow-2xl rounded-xl">
+                    class="relative z-10 mt-4 flex flex-col items-start justify-start md:p-10 sm:p-8 p-4 bg-white shadow-2xl rounded-xl">
                     <h4 class="w-full md:text-3xl sm:text-2xl text-xl text-center font-medium leading-snug">Gale Ranch
                         Notary - Apostille Service</h4>
                     {!! NoCaptcha::renderJs() !!}
@@ -223,7 +223,7 @@
                             </div>
                             <div class="relative">
                                 <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">Last
-                                    Name</label>
+                                    Name <span class="text-litePink font-semibold">*</span></label>
                                 <input type="text" name="lname" value="{{ old('lname') }}"
                                     class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-litePink"
                                     placeholder="Morrison">
@@ -241,7 +241,7 @@
                                     Number<span class="text-litePink font-semibold">*</span></label>
                                 <input type="text"  name="phone_number" value="{{ old('phone_number') }}"
                                     class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-litePink"
-                                    placeholder="Morrison">
+                                    placeholder="+14422123456">
                                 @if ($errors->has('phone_number'))
                                     <span class="py-2 mt-2 text-red-600 text-sm font-normal px-2" role="alert">
                                         {{ $errors->first('phone_number') }}.
@@ -305,9 +305,9 @@
                             @endif
                         </div>
                         <div>
-                            <label class="mt-4 px-2 font-medium text-gray-600 bg-white">Do your
-                                documents need to be translated?
-                                <span class="text-litePink font-semibold">*</span></label>
+                            <label class="mt-4 md:px-2 font-medium text-gray-600 bg-white">Do your
+                                documents need to be translated?<span class="text-litePink font-semibold">*</span>
+                                </label>
                             <div class="flex space-x-5 mt-4">
                                 <label>
                                     <input type="radio" name="language" value="yes" class="option" {{ old('language') == 'yes' ? 'checked' : '' }}> Yes
@@ -366,7 +366,7 @@
                             <label class="mt-4 px-2 font-medium text-gray-600 bg-white mb-4">Upload your documents
                                 <span class="text-litePink font-semibold">*</span></label>
 
-                            <label for="images" class="drop-container py-10 px-10 md:w-7/12 w-full" id="dropcontainer">
+                            <label for="images" class="drop-container py-10 md:px-10 px-2 md:w-7/12 w-full" id="dropcontainer">
                                 <span class="drop-title">Select a file</span>
                                 
                                 <input type="file" name="file" id="file" >
