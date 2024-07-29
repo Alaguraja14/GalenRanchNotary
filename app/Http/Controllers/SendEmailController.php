@@ -58,20 +58,20 @@ class SendEmailController extends Controller
     {
         $request->validate([
             'fname' => 'required|regex:/^[\pL\s]+$/u',
-            'lname' => 'regex:/^[\pL\s]+$/u',
+            'lname' => 'required|regex:/^[\pL\s]+$/u',
             'email' => 'required|email',
             'phone_number' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/',
             'address' => 'required',
             'zipcode' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/',
             'doc_inteded' => 'required',
             'language' => 'required|in:yes,no',
-            'language_name' => 'regex:/^[\pL\s]+$/u',
             'doc_count' => 'required',
             'doc_type' => 'required',
             'file' => 'required|file|max:5120|mimes:jpeg,jpg,pdf,doc,docx',
         ], [
             'fname.required' => 'First Name is required',
             'fname.regex' => 'Please enter a valid name',
+            'lname.required' => 'Last Name is required',
             'lname.regex' => 'Please enter a valid name',
             'email.email' => 'Please enter a valid email id',
             'phone_number.regex' => 'Please enter a valid phone number',

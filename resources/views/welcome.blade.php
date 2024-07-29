@@ -25,10 +25,10 @@
 
         .controls {
             /* position: absolute;
-                                                                width: 100%;
-                                                                display: flex;
-                                                                justify-content: space-between;
-                                                                top: 45%; */
+                                                                    width: 100%;
+                                                                    display: flex;
+                                                                    justify-content: space-between;
+                                                                    top: 45%; */
         }
 
         button {
@@ -67,6 +67,8 @@
                         class="w-7/12 mx-auto flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-between md:flex-row">
                         <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm textED9393 font-semibold md:mt-0 hover:animate-bounce"
                             href="/">Home</a>
+                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
+                            href="/apostille-service">Apostille Services</a>
                         <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
                             href="/services">Services</a>
                         <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
@@ -75,8 +77,7 @@
                             href="/blog">Blog</a>
                         <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
                             href="/faq">FAQ</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/apostille-service">Apostille Services</a>
+
                         <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
                             href="/contactUs">Contact Us</a>
                         <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
@@ -92,8 +93,13 @@
                     <h1 class="py-2">Notary Services and</h1>
                     <h1 class="py-2">Apostille Services</h1>
                 </div>
-                <a href="/services"
+                <div class='flex md:flex-row flex-col md:space-x-4 space-x-0 md:space-y-0 space-y-4'>
+                    <a href="/apostille-service"
+                    class="text-white flex items-center justify-center rounded-md w-60 font-medium text-lg py-2 hover:bg-litePink bg-teal-600">Apostille Services</a>
+                    <a href="/services"
                     class="text-white flex items-center justify-center rounded-md w-60 font-medium text-lg py-2 bgED9393 hover:bg-teal-600">Services</a>
+                </div>
+                
                 <div class="mt-10">
                     <p class="md:text-xl text-lg font-semibold py-2">100% Geniune Attestation & Fast Efficient Services</p>
                     <p class="md:text-xl text-lg font-semibold">Certified Notary Signing Agent | 24x7 Assistance</p>
@@ -358,7 +364,7 @@
 
                 <div
                     class="p-4 sm:w-1/2 lg:w-1/3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-                    <div class="relative flex">
+                    <a href="/apostille-service" class="relative flex">
                         <div class="backgroundGradient absolute inset-0 h-48 w-full rounded-lg p-6 shadow-lg">
                             <div class="mb-4 inline-flex h-10 w-10 items-center justify-center">
                                 <i class="fa-solid fa-book text-3xl font-semibold text-litePink"></i>
@@ -377,7 +383,7 @@
                                 An Apostille is a type of attestation in which documents are legalised in a particular
                                 format that is acceptable in all nations that belong to the Hague Convention. </p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <!-- Card2 -->
 
