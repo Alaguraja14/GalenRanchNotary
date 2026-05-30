@@ -1,20 +1,29 @@
+<x-schema-local-business />
 <div class="w-full mx-auto bg-gray-800">
     <footer class="p-4 bg-gray-800 sm:p-6 ">
         <div class="lg:flex lg:justify-between">
             <div class="mb-6 md:mb-0 w-1/4">
                 <a href="/" class="flex items-center md:pr-0 pr-4">
-                    <img src="images\Logo.png" class="mr-4 md:h-20 h-12" title="" alt="footerLogo">
+                    <img src="images\Logo.png" class="mr-4 md:h-20 h-12" alt="Gale Ranch Notary San Ramon logo in website footer">
                     <span class=" self-center md:text-lg sm:text-base text-sm tracking-wide font-semibold whitespace-nowrap text-white">Gale
                         Ranch Notary, <br>Apostille and Financial Services</span>
                 </a>
+                <p class="text-white pl-24">
+                    <span>Address:</span>
+                    6156 W Branch Rd, San Ramon, CA 94582, United States
+                </p>
             </div>
             <div class="sm:flex sm:space-x-10 sm:space-y-0 space-y-4 md:pr-20 md:pl-10">
                 <div>
                     <h3 class="mb-6 text-sm font-semibold text-gray-100 uppercase tracking-wide">Quick Links</h3>
                     <ul>
+                    <li class="mb-4">
+                            <a href="/apostille-service"
+                                class="text-gray-200 font-medium hover:underline hover:text-white">Apostille Services</a>
+                        </li>
                         <li class="mb-4">
                             <a href="/blog"
-                                class="text-gray-200 font-medium hover:underline hover:text-white">Blog </a>
+                                class="text-gray-200 font-medium hover:underline hover:text-white">Blog</a>
                         </li>
                          <li class="mb-4">
                             <a href="/review" class="text-gray-200 hover:underline hover:text-white">Reviews</a>

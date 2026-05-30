@@ -79,6 +79,17 @@ Route::get('/POAGaleRanchNotary', function () {
     return view('blogs.POAGaleRanchNotary');
 });
 
+Route::get('/beneficiary-designations-override-your-Will-or-Trust', function () {
+    return view('blogs.beneficiary-designations-override-your-Will-or-Trust');
+});
+
+Route::get('/buy-a-car-extended-warranty', function () {
+    return view('blogs.buy-a-car-extended-warranty');
+});
+
+Route::get('/Protection-Tips-for-Families-&-Professionals', function () {
+    return view('blogs.Protection-Tips-for-Families-&-Professionals');
+});
 
 Route::get('/current-outbreak-of-COVID-19', function () {
     return view('blogs.current-outbreak-of-COVID-19');
@@ -98,6 +109,18 @@ Route::get('/sitemap.xml', function () {
 
 Route::get('/apostille-service', function () {
     return view('apostille_service');
+});
+
+Route::get('/mobile-notary', function () {
+    return view('mobileNotary');
+});
+
+Route::get('/legalservice', function () {
+    return view('legalservice');
+});
+
+Route::get('/document-notarization', function () {
+    return view('documentNotarization');
 });
 
 

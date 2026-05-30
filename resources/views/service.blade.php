@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <title>Service | Gale Ranch Notary</title>
+    <title>Certified Mobile Notary Services | San Ramon</title>
     <link rel="icon" type="image/x-icon" href="images\Logo.png">
     <link rel=“canonical” href=“https://www.galeranchnotary.com/” />
     <meta charset="utf-8">
@@ -11,17 +11,15 @@
     <meta property="og:site_name" content="Gale Ranch Notary">
     <meta property="og:title" content="Gale Ranch Notary">
     <meta property="og:description"
-        content="Expert Apostille, Trusts, Immigration & Financial Services - Trusted solutions at 
-    Gale Ranch Notary. Visit for more details">
-    <meta property="og:image" content="https://www.galeranchnotary.com/images/Banner.png">
+        content="Professional mobile notarization for legal documents, power of attorney, loan signing, and estate paperwork.">
+    <meta property="og:image" content="https://www.galeranchnotary.com/images/thumbnail.png">
     <meta property="og:type" content="website" />
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="576">
     <meta property="og:url" content="https://www.galeranchnotary.com/">
     <meta name="description"
-        content=" Expert Apostille, Trusts, Immigration & Financial Services - Trusted solutions at 
-        Gale Ranch Notary. Visit for more details">
+        content="Professional mobile notarization for legal documents, power of attorney, loan signing, and estate paperwork.">
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Martel' rel='stylesheet'>
@@ -91,61 +89,77 @@
 
 <body class="antialiased">
     <main class="w-full backgroundGradient shadow-lg pb-20 rounded-b-3xl">
-        <x-logo></x-logo>
-        <div class="w-11/12 mx-auto py-2 mt-4 bgFFFDFD shadow-lg rounded-lg">
-            <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
-                <div x-data="{ open: false }"
-                    class="flex flex-col lg:w-8/12 md:w-10/12 px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-                    <div class="p-4 flex flex-row items-center justify-end">
-                        <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
-                            @click="open = !open">
-                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                                <path x-show="!open" fill-rule="evenodd"
-                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                    clip-rule="evenodd"></path>
-                                <path x-show="open" fill-rule="evenodd"
-                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <nav :class="{ 'flex': open, 'hidden': !open }"
-                        class="w-7/12 mx-auto flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-between md:flex-row">
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/">Home</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/apostille-service">Apostille Services</a>
-                        <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm textED9393 font-semibold md:mt-0"
-                            href="/services">Services</a>
-                        <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/review">Reviews</a>
-                        <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/blog">Blog</a>
-                        <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/faq">FAQ</a>
-
-                        <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
-                            href="/contactUs">Contact Us</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        <x-site-header active="services" nav-width="lg:w-8/12 md:w-10/12" />
         <section class="w-11/12 mx-auto ">
             <div class="text-center shadow-xl w-11/12 mx-auto rounded py-2.5 bgED9393 my-4">
                 <h1 class="text-white md:text-2xl text-xl font-bold tracking-wider">Services</h1>
             </div>
+
+            <section class="w-11/12 max-w-6xl mx-auto py-8 sm:py-10" aria-labelledby="our-services-heading">
+                <div class="text-center mb-8">
+                    <h2 id="our-services-heading" class="sm:text-2xl text-xl font-semibold title-font text-gray-900 mb-2">
+                        Our Services
+                    </h2>
+                    <div class="flex justify-center">
+                        <div class="w-16 h-0.5 rounded-full bgED9393 inline-flex"></div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+                    <a href="/mobile-notary"
+                        class="group flex flex-col bg-white shadow-xl rounded-lg p-6 hover:border-b-4 hover:border-litePink transition duration-300">
+                        <i class="fa-solid fa-car-side text-litePink text-3xl mb-4" aria-hidden="true"></i>
+                        <h3 class="text-lg font-semibold text-gray-900 group-hover:text-litePink mb-2">Mobile Notary</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed flex-grow">
+                            24/7 mobile notary in San Ramon and Tri-Valley. Same-day loan signing, power of attorney,
+                            and immigration documents — we travel to you.
+                        </p>
+                        <span class="mt-4 text-sm font-semibold textED9393 group-hover:text-litePink">Learn more &rarr;</span>
+                    </a>
+                    <a href="/apostille-service"
+                        class="group flex flex-col bg-white shadow-xl rounded-lg p-6 hover:border-b-4 hover:border-litePink transition duration-300">
+                        <i class="fa-solid fa-stamp text-litePink text-3xl mb-4" aria-hidden="true"></i>
+                        <h3 class="text-lg font-semibold text-gray-900 group-hover:text-litePink mb-2">Apostille Services</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed flex-grow">
+                            Fast apostille for birth certificates, FBI background checks, power of attorney, and
+                            international legal documents.
+                        </p>
+                        <span class="mt-4 text-sm font-semibold textED9393 group-hover:text-litePink">Learn more &rarr;</span>
+                    </a>
+                    <a href="/document-notarization"
+                        class="group flex flex-col bg-white shadow-xl rounded-lg p-6 hover:border-b-4 hover:border-litePink transition duration-300">
+                        <i class="fa-solid fa-file-circle-check text-litePink text-3xl mb-4" aria-hidden="true"></i>
+                        <h3 class="text-lg font-semibold text-gray-900 group-hover:text-litePink mb-2">Document Notarization</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed flex-grow">
+                            Professional notarization for legal, business, medical, travel, and general affidavit
+                            documents.
+                        </p>
+                        <span class="mt-4 text-sm font-semibold textED9393 group-hover:text-litePink">Learn more &rarr;</span>
+                    </a>
+                    <a href="/legalservice"
+                        class="group flex flex-col bg-white shadow-xl rounded-lg p-6 hover:border-b-4 hover:border-litePink transition duration-300">
+                        <i class="fa-solid fa-file-signature text-litePink text-3xl mb-4" aria-hidden="true"></i>
+                        <h3 class="text-lg font-semibold text-gray-900 group-hover:text-litePink mb-2">Loan Signing Services</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed flex-grow">
+                            Certified loan signing agent for real estate closings, lenders, escrow, and title companies
+                            in San Ramon, CA.
+                        </p>
+                        <span class="mt-4 text-sm font-semibold textED9393 group-hover:text-litePink">Learn more &rarr;</span>
+                    </a>
+                </div>
+            </section>
+
             <section class="text-gray-600 body-font">
                 <div class="w-11/12 px-5 py-10 mx-auto">
                     <div class="text-center mb-20">
-                        <h1 class="sm:text-2xl text-xl font-semibold title-font text-gray-900 mb-2">Documentation for
-                            Services
+                        <h1 class="sm:text-2xl text-xl font-semibold title-font text-gray-900 mb-2">Legal Documentation
+                            Services for
                         </h1>
                         <div class="flex mb-2 justify-center">
                             <div class="w-16 h-0.5 rounded-full bgED9393 inline-flex"></div>
                         </div>
                         <p
                             class="md:text-lg font-semibold leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-900s mb-2">
-                            Introducing Documentation Services by Gale Ranch Notary And Apostille.</p>
+                            Introducing Legal Services by Gale Ranch Notary And Apostille.</p>
                         <p
                             class="md:text-lg font-semibold leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-900s mb-2">
                             ONE-STOP-SHOP FOR ALL YOUR DOCUMENTATION SERVICES EITHER NEW | EXTENSION – INDIAN | USA |
@@ -172,8 +186,8 @@
     <section class="text-gray-600 body-font -mt-40 mb-10">
         <div class="md:w-8/12 w-11/12 px-5 py-14 mx-auto bg-white shadow-2xl">
             <div class=" lg:w-3/4 w-full mx-auto text-center ">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 textED9393 mb-8"
-                    viewBox="0 0 975.036 975.036">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    class="inline-block w-8 h-8 textED9393 mb-8" viewBox="0 0 975.036 975.036">
                     <path
                         d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
                     </path>

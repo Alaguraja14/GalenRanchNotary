@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <title>Mobile Notary & Apostille Services | San Ramon</title>
+    <title>Protection Tips for Families & Professionals | Gale Ranch Notary</title>
     <link rel="icon" type="image/x-icon" href="images\Logo.png">
     <link rel=“canonical” href=“https://www.galeranchnotary.com/” />
     <meta charset="utf-8">
@@ -10,8 +10,7 @@
     <meta name="robots" content="index,follow" />
     <meta property="og:site_name" content="Gale Ranch Notary">
     <meta property="og:title" content="Gale Ranch Notary">
-    <meta property="og:description"
-        content="Trusted mobile notary and apostille services for loan signing, estate documents, and same-day notarization in San Ramon.">
+    <meta property="og:description" content="Protection Tips for Families & Professionals | Gale Ranch Notary">
     <meta property="og:image" content="https://www.galeranchnotary.com/images/thumbnail.png">
     <meta property="og:image:secure_url" content="https://www.galeranchnotary.com/images/thumbnail.png">
     <meta property="og:type" content="website" />
@@ -21,15 +20,8 @@
     <meta property="og:url" content="https://www.galeranchnotary.com/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Gale Ranch Notary">
-    <meta name="twitter:description"
-        content="Trusted mobile notary and apostille services for loan signing, estate documents, and same-day notarization in San Ramon.">
+    <meta name="twitter:description" content="Protection Tips for Families & Professionals | Gale Ranch Notary">
     <meta name="twitter:image" content="https://www.galeranchnotary.com/images/thumbnail.png">
-
-    <meta name="description"
-        content="Trusted mobile notary and apostille services for loan signing, estate documents, and same-day notarization in San Ramon.">
-
-    <x-schema-local-business />
-
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Martel' rel='stylesheet'>
 
@@ -48,7 +40,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNYQNBM92E"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TGK99DB0N"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -57,54 +49,8 @@
         }
         gtag('js', new Date());
 
-        gtag('config', 'G-WNYQNBM92E');
+        gtag('config', 'G-7TGK99DB0N');
     </script>
-    <script type="application/ld+json">
-{
-  "schema": {
-    "@context": "https://schema.org",
-    "@type": "Financial services",
-    "@id": "",
-    "name": "Gale Ranch Notary, Apsotille and Financial Services",
-    "image": "https://www.galeranchnotary.com/",
-    "url": "https://www.galeranchnotary.com/",
-    "email": "Govind@GaleRanchNotary.com",
-    "telephone": "+19253223131",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "6156 West Branch Rd",
-      "addressLocality": "San Ramon",
-      "postalCode": "94582"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "https://schema.org/Monday",
-          "https://schema.org/Tuesday",
-          "https://schema.org/Wednesday",
-          "https://schema.org/Thursday",
-          "https://schema.org/Friday"
-        ],
-        "opens": "09:00:00",
-        "closes": "20:00:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "https://schema.org/Saturday",
-          "https://schema.org/Sunday"
-        ],
-        "opens": "09:00:00",
-        "closes": "21:00:00"
-      }
-    ]
-  }
-}
-</script>
-
-
-
     <style>
         body {
             font-family: 'Martel';
@@ -139,7 +85,70 @@
 </head>
 
 <body class="antialiased">
-    @yield('content')
+    <x-blogHeader></x-blogHeader>
+    <section class="text-gray-600 body-font -mt-48">
+        <div class="w-11/12 px-5 py-10 mx-auto">
+            @if ($message = Session::get('success'))
+                <div
+                    class="mt-4 alert alert-success bg-green-600 text-white py-2.5 text-center text-base font-semibold">
+                    <p>{{ $message }}</p>
+                </div>
+            @endif
+            <div class="py-10">
+
+
+                <div class="text-center shadow-xl rounded py-4 bg-yellow-500">
+                    <h1 class="text-gray-100 md:text-xl text-base font-semibold tracking-wider">Protection Tips for
+                        Families & Professionals</h1>
+                </div>
+
+                <div class="py-10 px-5  mt-10">
+                    <p class="md:text-base text-base font-semibold mt-4 mb-4">⚠️ Americans lose an estimated $119 billion
+                        to online scams every year. Cyber fraud and financial mistakes are increasing every day. A few
+                        simple precautions can help protect your family and assets.</p>
+
+                    <p class="md:text-base text-base font-semibold mt-4">1️⃣ Avoid using personal emails like Gmail,
+                        Yahoo, or Hotmail for professional/business communication. A private business-domain email is
+                        generally safer and more professional.</p>
+
+                    <p class=" text-base font-semibold mt-4">2️⃣ When sending wire transfers for real-estate purchases:</p>
+                     <ul class="list-none py-4 md:px-10 px-4 space-y-3 md:text-base text-sm leading-relaxed">
+                        <li>✅ Send a small test amount first</li>
+                        <li>✅ Confirm receipt before sending the balance</li>
+                        <li>✅ Verify wiring instructions directly with the title company using a trusted phone number</li>
+                        <li>✅ Be cautious of last-minute email changes</li>
+                    </ul>
+
+                    <p class=" text-base font-semibold mt-4">3️⃣ Review your financial and insurance accounts regularly.</p>
+                    <ul class=" py-4 md:px-10 px-4 space-y-3 md:text-base text-sm leading-relaxed">
+                        <li>✔️ Add your spouse as primary beneficiary</li>
+                        <li>✔️ Add children as contingent beneficiaries</li>
+                        <li>✔️ Keep records updated to avoid future complications</li>
+                    </ul>
+
+                    <p class="md:text-lg text-base font-semibold mt-4">✅ Small precautions today can prevent major financial problems tomorrow.</p>
+                   
+                    <p class="md:text-lg text-base font-medium mt-4 px-5"> – <span class='text-blue-600'>
+                            Govind Gopal,(925) 322 3131 &nbsp; &nbsp; &nbsp;<a href='mailto:govind@galeranchnotary.com'
+                                class='underline'>Govind@GaleRanchNotary.com</a></span><br>Gale Ranch
+                        Notary, Apostille and Financial
+                        Services</a>
+                    </p>
+
+                </div>
+                <x-subscribeButton></x-subscribeButton>
+                <div class="md:px-5 py-8 flex justify-between border-y-2 w-full sm:text-base text-sm">
+                    <a href="/buy-a-car-extended-warranty"
+                        class="text-gray-100 bg-yellow-500 px-4 py-2 rounded-md"><i
+                            class="fa-solid fa-chevron-left mr-1"></i>Previous Post</a>
+
+                </div>
+            </div>
+
+            <x-blogCommentForm></x-blogCommentForm>
+        </div>
+    </section>
+    <x-footer></x-footer>
     <script>
         $(document).ready(function() {
             $("body").show();

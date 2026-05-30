@@ -25,10 +25,10 @@
 
         .controls {
             /* position: absolute;
-                                                                    width: 100%;
-                                                                    display: flex;
-                                                                    justify-content: space-between;
-                                                                    top: 45%; */
+                                                                                    width: 100%;
+                                                                                    display: flex;
+                                                                                    justify-content: space-between;
+                                                                                    top: 45%; */
         }
 
         button {
@@ -43,65 +43,26 @@
         }
     </style>
     <main class="w-full backgroundGradient shadow-lg">
-        <x-logo></x-logo>
-        <div class="w-11/12 mx-auto py-2 mt-4 bgFFFDFD shadow-lg rounded-lg">
-
-            <!-- component -->
-
-            <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
-                <div x-data="{ open: false }"
-                    class="flex flex-col  xl:w-9/12 px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-                    <div class="p-4 flex flex-row items-center justify-end">
-                        <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                                <path x-show="!open" fill-rule="evenodd"
-                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                    clip-rule="evenodd"></path>
-                                <path x-show="open" fill-rule="evenodd"
-                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <nav :class="{ 'flex': open, 'hidden': !open }"
-                        class="w-7/12 mx-auto flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-between md:flex-row">
-                        <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm textED9393 font-semibold md:mt-0 hover:animate-bounce"
-                            href="/">Home</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/apostille-service">Apostille Services</a>
-                        <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
-                            href="/services">Services</a>
-                        <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
-                            href="/review">Reviews</a>
-                        <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
-                            href="/blog">Blog</a>
-                        <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
-                            href="/faq">FAQ</a>
-
-                        <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
-                            href="/contactUs">Contact Us</a>
-                        <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
-                            href="/subscribe">Subscribe</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        <x-site-header active="home" />
 
         <section class="w-11/12 mx-auto flex md:flex-row flex-col py-5 justify-between">
             <div class="md:w-6/12 flex flex-col pt-10">
-                <div class="md:text-5xl text-3xl font-semibold tracking-wider mb-6 pt-10">
-                    <h1 class="py-2">Notary Services and</h1>
-                    <h1 class="py-2">Apostille Services</h1>
+                <div class="md:text-4xl text-3xl font-semibold tracking-wider mb-6 pt-10">
+                    <h1 class="py-2">
+                        <span class="block">Notary &amp; Apostille Services</span>
+                        <span class="block">in San Ramon, CA</span>
+                    </h1>
                 </div>
                 <div class='flex md:flex-row flex-col md:space-x-4 space-x-0 md:space-y-0 space-y-4'>
                     <a href="/apostille-service"
-                    class="text-white flex items-center justify-center rounded-md w-60 font-medium text-lg py-2 hover:bg-litePink bg-teal-600">Apostille Services</a>
+                        class="text-white flex items-center justify-center rounded-md w-60 font-medium text-lg py-2 hover:bg-litePink bg-teal-600">Apostille
+                        Services</a>
                     <a href="/services"
-                    class="text-white flex items-center justify-center rounded-md w-60 font-medium text-lg py-2 bgED9393 hover:bg-teal-600">Services</a>
+                        class="text-white flex items-center justify-center rounded-md w-60 font-medium text-lg py-2 bgED9393 hover:bg-teal-600">Services</a>
                 </div>
-                
+
                 <div class="mt-10">
-                    <p class="md:text-xl text-lg font-semibold py-2">100% Geniune Attestation & Fast Efficient Services</p>
+                    <p class="md:text-xl text-lg font-semibold py-2">100% Genuine Attestation & Fast Efficient Services</p>
                     <p class="md:text-xl text-lg font-semibold">Certified Notary Signing Agent | 24x7 Assistance</p>
                     <p class="md:text-xl text-lg font-semibold py-2">Health Insurance Certified.</p>
 
@@ -324,16 +285,60 @@
 
     <section class="w-11/12 mx-auto body-font">
         <div class="container px-5 py-16 mx-auto">
-
-
             <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
-                <h1 class="sm:text-4xl text-2xl title-font mb-2 black252B42 font-semibold">What We Do?
-                </h1>
+                <h2 class="sm:text-4xl text-2xl title-font mb-2 black252B42 font-semibold">What We Do?
+                </h2>
                 <div class="flex mt-1 justify-center">
                     <div class="w-12 h-0.5 rounded-full bgED9393 inline-flex"></div>
                 </div>
             </div>
-            <div class="flex md:w-10/12 w-full mx-auto flex-wrap -m-4">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+                <a href="/mobile-notary"
+                    class="backgroundGradient group flex flex-col bg-white shadow-xl rounded-lg p-6 hover:border-litePink transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300">
+                    <i class="fa-solid fa-feather text-litePink text-3xl font-semibold mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-900 group-hover:text-litePink mb-2">Mobile Notary</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed flex-grow">
+                        24/7 mobile notary in San Ramon and Tri-Valley. Same-day loan signing, power of attorney,
+                        and immigration documents — we travel to you.
+                    </p>
+                    <span class="mt-4 text-sm font-semibold textED9393 group-hover:text-litePink">Learn more &rarr;</span>
+                </a>
+                <a href="/apostille-service"
+                    class="backgroundGradient group flex flex-col bg-white shadow-xl rounded-lg p-6  hover:border-litePink transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300">
+                    <i class="fa-solid fa-stamp text-litePink text-3xl mb-4" aria-hidden="true"></i>
+                    <h3 class="text-lg font-semibold text-gray-900 group-hover:text-litePink mb-2">Apostille Services</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed flex-grow">
+                        Fast apostille for birth certificates, FBI background checks, power of attorney, and
+                        international legal documents.
+                    </p>
+                    <span class="mt-4 text-sm font-semibold textED9393 group-hover:text-litePink">Learn more &rarr;</span>
+                </a>
+                <a href="/document-notarization"
+                    class="backgroundGradient group flex flex-col bg-white shadow-xl rounded-lg p-6  hover:border-litePink transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300">
+                    <i class="fa-solid fa-file-circle-check text-litePink text-3xl mb-4" aria-hidden="true"></i>
+                    <h3 class="text-lg font-semibold text-gray-900 group-hover:text-litePink mb-2">Document Notarization
+                    </h3>
+                    <p class="text-sm text-gray-600 leading-relaxed flex-grow">
+                        Professional notarization for legal, business, medical, travel, and general affidavit
+                        documents.
+                    </p>
+                    <span class="mt-4 text-sm font-semibold textED9393 group-hover:text-litePink">Learn more &rarr;</span>
+                </a>
+                <a href="/legalservice"
+                    class="backgroundGradient group flex flex-col bg-white shadow-xl rounded-lg p-6  hover:border-litePink transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300">
+                    <i class="fa-solid fa-file-signature text-litePink text-3xl mb-4" aria-hidden="true"></i>
+                    <h3 class="text-lg font-semibold text-gray-900 group-hover:text-litePink mb-2">Loan Signing Services
+                    </h3>
+                    <p class="text-sm text-gray-600 leading-relaxed flex-grow">
+                        Certified loan signing agent for real estate closings, lenders, escrow, and title companies
+                        in San Ramon, CA.
+                    </p>
+                    <span class="mt-4 text-sm font-semibold textED9393 group-hover:text-litePink">Learn more &rarr;</span>
+                </a>
+            </div>
+
+            {{-- <div class="flex md:w-10/12 w-full mx-auto flex-wrap -m-4">
 
                 <!-- Card1 -->
                 <div
@@ -370,8 +375,7 @@
                                 <i class="fa-solid fa-book text-3xl font-semibold text-litePink"></i>
                             </div>
                             <h2 class="black252B42 title-font mb-2 text-xl font-semibold">Apostille Services</h2>
-                            {{-- <p class="text737373 text-xs leading-relaxed sm:text-sm">Notary – Mobile (San Ramon, Dublin,
-                            Pleasanton, Walnut Creek)</p> --}}
+                           
                         </div>
 
                         <div
@@ -396,20 +400,39 @@
                             <div class="mb-4 inline-flex h-10 w-10 items-center justify-center">
                                 <i class="fa-solid fa-heart-pulse text-3xl font-semibold text-litePink"></i>
                             </div>
-                            <h2 class="black252B42 title-font mb-2 text-xl font-semibold">Trust & Estates</h2>
-                            <p class="text737373 text-xs leading-relaxed sm:text-sm">Will/Trust/Health-Care Directive
-                                through
-                                Attorney Service</p>
+                            <h2 class="black252B42 title-font mb-2 text-xl font-semibold">Legal Services</h2>
+                           
                         </div>
 
                         <div
                             class="relative z-10 w-full backgroundGradient px-8 py-10 opacity-0 hover:opacity-100 rounded-lg cursor-pointer h-48 overflow-y-scroll">
-                            <h2 class="title-font mb-1 text-sm font-medium tracking-widest text-indigo-500">Trust & Estates
+                            <h2 class="title-font mb-1 text-sm font-medium tracking-widest text-indigo-500">Legal Services
                             </h2>
-                            <p class="leading-relaxed lg:text-sm text-xs">Our Trusts & Estates Practice builds
-                                innovative, personalized strategies that advance clients’ unique needs & protect their
-                                financial legacies. We use the same problem-solving approach to successfully represent
-                                public charities and private foundations. </p>
+                            <p class="leading-relaxed lg:text-sm text-xs">I am a Legal Document Assistant (LDA) registered
+                                in California, authorized to prepare, file, and manage legal documents at your specific
+                                direction. An LDA provides an affordable self-help alternative to hiring an attorney for
+                                document preparation services.</p>
+
+                            <p class="leading-relaxed lg:text-sm text-xs mt-3">I can assist with properly drafting and
+                                formatting California-compliant:</p>
+                            <ul class="list-disc list-inside leading-relaxed lg:text-sm text-xs mt-2">
+                                <li>Wills</li>
+                                <li>Living Trusts</li>
+                                <li>Advance Health Care Directives</li>
+                                <li>Durable Powers of Attorney</li>
+                                <li>Property Transfer Documents</li>
+                                <li>Deeds and Trust Funding Documents</li>
+                                <li>Probate and Other Legal Forms</li>
+                            </ul>
+
+
+                            <p class="leading-relaxed lg:text-sm text-xs mt-3">I also offer document filing, notarization,
+                                and related legal support services.</p>
+
+                            <p class="leading-relaxed lg:text-sm text-xs mt-3"><strong>Important Notice:</strong> I am not
+                                an attorney and cannot provide legal advice, represent you in
+                                court, or select legal forms for you. All services are provided at your direction in
+                                compliance with California law. </p>
                         </div>
                     </div>
                 </div>
@@ -417,7 +440,7 @@
 
                 <!-- Card4 -->
 
-                <div
+                 <div
                     class="p-4 sm:w-1/2 lg:w-1/3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                     <div class="relative flex">
                         <div class="backgroundGradient absolute inset-0 h-48 w-full rounded-lg p-6 shadow-lg">
@@ -439,73 +462,20 @@
                                 independent contractors to assist in the last step of the loan process.</p>
                         </div>
                     </div>
-                </div>
+                </div> 
                 <!-- Card4 -->
-
-                <!-- Card5 -->
-                <div
-                    class="p-4 sm:w-1/2 lg:w-1/3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-                    <div class="relative flex">
-                        <div class="backgroundGradient absolute inset-0 h-48 w-full rounded-lg p-6 shadow-lg">
-                            <div class="mb-4 inline-flex h-10 w-10 items-center justify-center">
-                                <i class="fa-solid fa-plane-arrival text-3xl font-semibold text-litePink"></i>
-                            </div>
-                            <h2 class="black252B42 title-font mb-2 text-xl font-semibold">Immigration Services</h2>
-
-                        </div>
-
-                        <div
-                            class="relative z-10 w-full backgroundGradient px-8 py-10 opacity-0 hover:opacity-100 rounded-lg cursor-pointer h-48 overflow-y-scroll">
-                            <h2 class="title-font mb-1 text-sm font-medium tracking-widest text-indigo-500">Immigration
-                                Services
-                            </h2>
-                            <p class="leading-relaxed lg:text-sm text-xs">An immigration service is a process which helps
-                                people to emigrate from one country to another country and through legal and documentation
-                                process to increase the chances of immigration for study, work, travel or business purpose.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card5 -->
-
-                <!-- Card6 -->
-                <div
-                    class="p-4 sm:w-1/2 lg:w-1/3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-                    <div class="relative flex">
-                        <div class="backgroundGradient absolute inset-0 h-48 w-full rounded-lg p-6 shadow-lg">
-                            <div class="mb-4 inline-flex h-10 w-10 items-center justify-center">
-                                <i class="fa-solid fa-hand-holding-dollar text-3xl font-semibold text-litePink"></i>
-                            </div>
-                            <h2 class="black252B42 title-font mb-2 text-xl font-semibold">Financial Services</h2>
-
-                        </div>
-
-                        <div
-                            class="relative z-10 w-full backgroundGradient px-8 py-10 opacity-0 hover:opacity-100 rounded-lg cursor-pointer h-48 overflow-y-scroll">
-                            <h2 class="title-font mb-1 text-sm font-medium tracking-widest text-indigo-500">Financial
-                                Services
-                            </h2>
-                            <p class="leading-relaxed lg:text-sm text-xs">Financial services is a broad range of more
-                                specific activities such as banking, investing, and insurance. Financial services are
-                                limited to the activity of financial services firms and their professionals, while financial
-                                products are the actual goods, accounts, or investments they provide.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card6 -->
-            </div>
+            </div> --}}
         </div>
     </section>
 
     <section class="border-2">
         <div class="md:w-11/12 mx-auto flex px-5 py-16 md:flex-row flex-col items-start">
             <div class="lg:max-w-lg lg:w-full md:w-1/2 mx-auto md:mb-0 mb-10 flex items-center">
-                <img class="object-fit object-center h-96 md:w-3/4 w-full mx-auto rounded" title=""
-                    alt="ProfileIamge" src="images\profileImage.png">
+                <img class="object-fit object-center h-96 md:w-3/4 w-full mx-auto rounded"
+                    alt="NNA certified mobile notary Govind Gopalsamy serving San Ramon California" src="images\profileImage.png">
             </div>
             <div class="lg:flex-grow md:w-1/2  md:pl-2 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-2 font-bold">About</h1>
+                <h3 class="title-font sm:text-4xl text-3xl mb-2 font-bold">About</h3>
                 <div class="flex mb-4 justify-center">
                     <div class="w-12 h-0.5 rounded-full bgED9393 inline-flex"></div>
                 </div>
@@ -547,12 +517,13 @@
 
     <section class="shadow-xl">
         <div class="w-11/12 mx-auto py-10">
-            <h1 class="text-center sm:text-4xl text-3xl mb-2 font-bold">Certificates</h1>
+            <h4 class="text-center sm:text-4xl text-3xl mb-2 font-bold">Certificates</h4>
             <div class="flex mb-4 justify-center">
                 <div class="w-12 h-0.5 rounded-full bgED9393 inline-flex"></div>
             </div>
             <div class="w-full justify-center flex items-center">
-                <img class="object-fit object-center h-40 w-64" title="" alt="certificate1"
+                <img class="object-fit object-center h-40 w-64"
+                    alt="Better Business Bureau accredited Gale Ranch Notary in San Ramon"
                     src="images\bbb-logo-galeranchnotary 1.png">
             </div>
 
@@ -560,21 +531,24 @@
                 <div class="flex flex-wrap items-center justify-center sm:-m-4 -mx-4 -mb-10 -mt-4">
                     <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                         <div class="rounded-lg h-40 overflow-hidden">
-                            <img alt="certificate2" title=""class="object-contain object-center h-full w-full"
+                            <img alt="Bonded and insured mobile notary certification for San Ramon clients"
+                                class="object-contain object-center h-full w-full"
                                 src="images\Rectangle 21.png">
                         </div>
 
                     </div>
                     <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                         <div class="rounded-lg h-40 overflow-hidden">
-                            <img alt="certificate3" title="" class="object-contain object-center h-full w-full"
+                            <img alt="Certified loan signing agent credential from Gale Ranch Notary"
+                                class="object-contain object-center h-full w-full"
                                 src="images\certificate-pr-1 1.png">
                         </div>
 
                     </div>
                     <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                         <div class="rounded-lg h-40 overflow-hidden">
-                            <img alt="certificate4" title="" class="object-contain object-center h-full w-full"
+                            <img alt="NNA certified and trained notary signing agent badge"
+                                class="object-contain object-center h-full w-full"
                                 src="images\Certified-Trained-3 1.png">
                         </div>
 
@@ -583,7 +557,8 @@
             </div>
 
             <div class="w-full justify-center flex items-center py-5">
-                <img class="object-fit object-center h-40 w-64" title="" alt="certificate5"
+                <img class="object-fit object-center h-40 w-64"
+                    alt="San Ramon Chamber of Commerce member business certification badge"
                     src="images\WhatsApp-Image-2021-06-22-at-12.13.png">
             </div>
     </section>
@@ -592,9 +567,9 @@
         <div class="md:w-3/4 mx-auto flex md:flex-row flex-col shadow-xl rounded-lg">
             <div
                 class="md:w-1/2 rounded-l-lg  py-10 text-white text-left bg-litePink flex flex-col items-start md:px-10 px-5 justify-center">
-                <h1 class="md:text-2xl text-xl font-semibold mb-2">
+                <h5 class="md:text-2xl text-xl font-semibold mb-2">
                     Subscribe:
-                </h1>
+                </h5>
                 <p class="md:text-lg">
                     To receive Bay Area Events, Finance and Notary Info, Discount/FREE offers</p>
             </div>
@@ -609,8 +584,8 @@
 
     <section class="text-gray-600 body-font">
         <div class=" md:px-5 py-24 mx-auto">
-            <h1 class="lg:text-3xl md:text-2xl text-xl font-medium title-font text-gray-900 mb-2 text-center">Want to talk
-                with us ?</h1>
+            <h6 class="lg:text-3xl md:text-2xl text-xl font-medium title-font text-gray-900 mb-2 text-center">Want to talk
+                with us ?</h6>
             <div class="flex mb-12 justify-center">
                 <div class="w-12 h-0.5 rounded-full bgED9393 inline-flex"></div>
             </div>

@@ -2,8 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <title>Blog | Gale Ranch Notary
-    </title>
+    <title>Notary & Apostille Blog | California</title>
     <link rel="icon" type="image/x-icon" href="images\Logo.png">
     <link rel=“canonical” href=“https://www.galeranchnotary.com/” />
     <meta charset="utf-8">
@@ -12,8 +11,7 @@
     <meta property="og:site_name" content="Gale Ranch Notary">
     <meta property="og:title" content="Gale Ranch Notary">
     <meta property="og:description"
-        content="Read insightful blog posts on Apostille, Trusts, Immigration & Financial Services. 
-    Stay informed and make informed decisions. Visit now!">
+        content="Helpful guides about mobile notarization, apostille processing, estate documents, and loan signing services.">
     <meta property="og:image" content="https://www.galeranchnotary.com/images/Banner.png">
     <meta property="og:type" content="website" />
     <meta property="og:image:type" content="image/png">
@@ -21,8 +19,7 @@
     <meta property="og:image:height" content="576">
     <meta property="og:url" content="https://www.galeranchnotary.com/">
     <meta name="description"
-        content="Read insightful blog posts on Apostille, Trusts, Immigration & Financial Services. 
-        Stay informed and make informed decisions. Visit now!">
+        content="Helpful guides about mobile notarization, apostille processing, estate documents, and loan signing services.">
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Martel' rel='stylesheet'>
@@ -89,44 +86,7 @@
 
 <body class="antialiased">
     <main class="w-full backgroundGradient shadow-lg pb-20 rounded-b-3xl">
-        <x-logo></x-logo>
-        <div class="w-11/12 mx-auto py-2 mt-4 bgFFFDFD shadow-lg rounded-lg">
-            <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
-                <div x-data="{ open: false }"
-                    class="flex flex-col lg:w-8/12 md:w-10/12 px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-                    <div class="p-4 flex flex-row items-center justify-end">
-                        <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
-                            @click="open = !open">
-                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                                <path x-show="!open" fill-rule="evenodd"
-                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                    clip-rule="evenodd"></path>
-                                <path x-show="open" fill-rule="evenodd"
-                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <nav :class="{ 'flex': open, 'hidden': !open }"
-                        class="w-7/12 mx-auto flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-between md:flex-row">
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/">Home</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm  md:mt-0"
-                            href="/services">Services</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/review">Reviews</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-litePink font-semibold md:mt-0"
-                            href="/blog">Blog</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/faq">FAQ</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/apostille-service">Apostille Services</a>
-                        <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
-                            href="/contactUs">Contact Us</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        <x-site-header active="blog" nav-width="lg:w-8/12 md:w-10/12" />
 
         <section class="w-11/12 mx-auto ">
             <div class="text-center w-11/12 mx-auto shadow-xl rounded py-2.5 bgED9393 my-4">
@@ -136,7 +96,8 @@
             <div class="py-10 w-11/12 mx-auto">
                 <div class="w-full mb-5">
                     <!-- <img src="images\blog\blogHome.png"
-                                                    class="object-cover object-center w-full h-96 mx-auto" /> -->
+                        alt="Gale Ranch Notary blog featuring notary and apostille guides"
+                        class="object-cover object-center w-full h-96 mx-auto" /> -->
                 </div>
 
                 <article class="py-10 md:px-10 px-5 shadow-lg border-b-4 rounded-xl border-litePink mb-8">
@@ -390,6 +351,64 @@
                         </ul>
 
                         <a href="/POAGaleRanchNotary" target="_blank"
+                            class="md:text-lg text-base text-litePink font-semibold">Read More
+                            & Add a
+                            Comment <i
+                                class="fa-regular fa-share-from-square ml-2 text-lg text-litePink font-semibold"></i></a>
+                    </div>
+                </article>
+
+                <article class="py-10 md:px-10 px-5 shadow-lg border-b-4 rounded-xl border-litePink mb-8 ">
+                    <h1 class="md:text-2xl text-lg font-semibold py-1">
+                        Did you know beneficiary designations override your Will or Trust?</h1>
+                    <div class="px-4 py-4">
+                        <p class="md:text-xl text-base font-semibold mt-4">For example:
+                            You may have:
+                           </p>
+
+                        <ul class="list-decimal py-4 md:px-10 px-4 space-y-3 md:text-base text-sm leading-relaxed">
+                            <li>IRA</li>
+                            <li>401(k).....</li>
+                            
+                        </ul>
+
+                        <a href="/beneficiary-designations-override-your-Will-or-Trust" target="_blank"
+                            class="md:text-lg text-base text-litePink font-semibold">Read More
+                            & Add a
+                            Comment <i
+                                class="fa-regular fa-share-from-square ml-2 text-lg text-litePink font-semibold"></i></a>
+                    </div>
+                </article>
+
+                 <article class="py-10 md:px-10 px-5 shadow-lg border-b-4 rounded-xl border-litePink mb-8 ">
+                    <h1 class="md:text-2xl text-lg font-semibold py-1">
+                        Would you buy a car extended warranty for 15 years instead of 10 years?</h1>
+                    <div class="px-4 py-4">
+                        <p class="md:text-xl text-base font-semibold mt-4">FMost people say yes if:
+                           </p>
+
+                        <ul class="list-decimal py-4 md:px-10 px-4 space-y-3 md:text-base text-sm leading-relaxed">
+                            <li>The extra cost is reasonable</li>
+                            <li>They plan to keep the car long term....</li>
+                        </ul>
+
+                        <a href="/buy-a-car-extended-warranty" target="_blank"
+                            class="md:text-lg text-base text-litePink font-semibold">Read More
+                            & Add a
+                            Comment <i
+                                class="fa-regular fa-share-from-square ml-2 text-lg text-litePink font-semibold"></i></a>
+                    </div>
+                </article>
+
+                  <article class="py-10 md:px-10 px-5 shadow-lg border-b-4 rounded-xl border-litePink mb-8 ">
+                    <h1 class="md:text-2xl text-lg font-semibold py-1">
+                        Protection Tips for Families & Professionals</h1>
+                    <div class="px-4 py-4">
+                        <p class="md:text-xl text-base font-medium my-4">⚠️ Americans lose an estimated $119 billion to online scams every year. Cyber fraud and financial mistakes are increasing every day. A few simple precautions can help protect your family and assets.
+                           </p>
+
+
+                        <a href="/Protection-Tips-for-Families-&-Professionals" target="_blank"
                             class="md:text-lg text-base text-litePink font-semibold">Read More
                             & Add a
                             Comment <i

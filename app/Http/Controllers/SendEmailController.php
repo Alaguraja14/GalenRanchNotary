@@ -119,17 +119,17 @@ class SendEmailController extends Controller
             Log::info('data');
             Log::info($data);
             // Send email with attachment
-            Mail::to('Govind@GaleRanchNotary.com')
-                ->send(new ApostilleMail($data, $attachmentPath, $attachmentName));
+            // Mail::to('Govind@GaleRanchNotary.com')
+            //     ->send(new ApostilleMail($data, $attachmentPath, $attachmentName));
 
-            return back()->with('success', 'Thanks For Contacting Us');
+            // return back()->with('success', 'Thanks For Contacting Us');
+            Mail::to('Govind@GaleRanchNotary.com')
+             ->send(new ApostilleMail($data, $attachmentPath, $attachmentName));
+
+            $paymentURL="https://secure.swirepay.com/payment-page-link/paymentpagelink-ad6ea6e7a8ad4d118408ec0f68f73285";
+             return redirect()->to($paymentURL);
         } else {
             return back()->with('error', 'Invalid file uploaded.');
         }
-
-
-
-        // Mail::to('alaguraja.mscmba@gmail.com')->send(new ApostilleMail($data));
-        // return back()->with('success', 'Thanks For Contacting Us');
     }
 }

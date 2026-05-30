@@ -1,4 +1,4 @@
-<?php echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
+<?php echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>'; ?>
 
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <sitemap>
@@ -24,7 +24,7 @@
     </sitemap>
     <sitemap>
         <loc>https://www.galeranchnotary.com/4-main-areas-of-focus-for-the-first-quarter-2022
-</loc>
+        </loc>
     </sitemap>
     <sitemap>
         <loc>https://www.galeranchnotary.com/how-to-change-your-legal-name-in-california-and-acorss-the-us</loc>

@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <title>Apostille Service | Gale Ranch Notary
+    <title>Fast Apostille Services | San Ramon
     </title>
     <link rel="icon" type="image/x-icon" href="images\Logo.png">
     <link rel=“canonical” href=“https://www.galeranchnotary.com/” />
@@ -11,14 +11,14 @@
     <meta name="robots" content="index,follow" />
     <meta property="og:site_name" content="Gale Ranch Notary">
     <meta property="og:title" content="Gale Ranch Notary">
-    <meta property="og:description" content="Apostille Service - Standard Service, Personal & Business Documents.">
+    <meta property="og:description" content="Reliable apostille services for birth certificates, FBI background checks, and international legal documents.">
     <meta property="og:image" content="https://www.galeranchnotary.com/images/Banner.png">
     <meta property="og:type" content="website" />
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="576">
     <meta property="og:url" content="https://www.galeranchnotary.com/">
-    <meta name="description" content="Apostille Service - Standard Service, Personal & Business Documents.">
+    <meta name="description" content="Reliable apostille services for birth certificates, FBI background checks, and international legal documents.">
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Martel' rel='stylesheet'>
@@ -144,53 +144,18 @@
 
 <body class="antialiased">
     <main class="w-full backgroundGradient shadow-lg pb-20 rounded-b-3xl">
-        <x-logo></x-logo>
-        <div class="w-11/12 mx-auto py-2 mt-4 bgFFFDFD shadow-lg rounded-lg">
-            <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
-                <div x-data="{ open: false }"
-                    class="flex flex-col lg:w-8/12 md:w-10/12 px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-                    <div class="p-4 flex flex-row items-center justify-end">
-                        <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
-                            @click="open = !open">
-                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                                <path x-show="!open" fill-rule="evenodd"
-                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                    clip-rule="evenodd"></path>
-                                <path x-show="open" fill-rule="evenodd"
-                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <nav :class="{ 'flex': open, 'hidden': !open }"
-                        class="w-7/12 mx-auto flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-between md:flex-row">
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/">Home</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm textED9393 font-semibold md:mt-0"
-                            href="/apostille-service">Apostille Services</a>
-                        <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/services">Services</a>
-                        <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/review">Reviews</a>
-                        <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm  md:mt-0"
-                            href="/blog">Blog</a>
-                        <a class="leading-6 tracking-wider hover:animate-bounce hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/faq">FAQ</a>
-                        <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
-                            href="/contactUs">Contact Us</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        <x-site-header active="apostille" nav-width="lg:w-8/12 md:w-10/12" />
     </main>
     <!-- component -->
     <section class="lg:pb-20 -mt-14">
         <div class='w-full bg-cover py-40 flex justify-center items-center'
-            style='background-image:url(images/apostille-service.jpg)'>
+            style='background-image:url(images/apostille-service.jpg)'
+            role="img"
+            aria-label="Apostille document authentication services for personal and business documents in San Ramon">
             <div class='md:text-5xl sm:text-2xl text-xl font-bold text-white text-center'>Apostille Service <br><span
                     class="md:text-3xl sm:text-xl text-lg font-bold text-white text-center mt-10">Standard Service,
                     Personal & Business Documents.</span></div>
-            {{-- <img src="images\apostille-service.jpg" alt="apostille services" class='w-full h-full object-cover'/> --}}
+            {{-- <img src="images\apostille-service.jpg" alt="Apostille document authentication services for San Ramon personal and business documents" class='w-full h-full object-cover'/> --}}
         </div>
         <div class="flex flex-col items-center justify-between w-full md:px-10 px-4 pt-5 pb-20 lg:pt-0 lg:flex-row">
             <div class="relative z-10 mx-auto w-full max-w-8/12 mt-20 lg:mt-0 lg:w-10/12">
@@ -399,10 +364,227 @@
 
                         <div class="relative flex justify-center items-center">
                             <button
-                                class="inline-block  px-10 py-4 text-xl font-medium text-center text-white transition duration-200 bg-litePink rounded-lg hover:bg-teal-500 ease">Submit</button>
+                                class="inline-block  px-10 py-4 text-xl font-medium text-center text-white transition duration-200 bg-litePink rounded-lg hover:bg-teal-500 ease">Submit & Pay</button>
                         </div>
                     </form>
                 </div>
+
+                <div class="relative z-10 mt-12 sm:mt-16 w-full space-y-10 sm:space-y-14">
+                    {{-- Top Features --}}
+                    <section aria-labelledby="apostille-features-heading">
+                        <div class="text-center mb-8 sm:mb-10">
+                            <h2 id="apostille-features-heading"
+                                class="text-xl sm:text-2xl md:text-3xl font-semibold title-font text-gray-900 mb-2">
+                                Top Features
+                            </h2>
+                            <div class="flex justify-center">
+                                <div class="w-16 h-0.5 rounded-full bgED9393 inline-flex"></div>
+                            </div>
+                        </div>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 list-none p-0 m-0">
+                            <li class="text-center bg-white shadow-xl rounded-lg p-5 font-semibold text-gray-900">
+                                <i class="fa-solid fa-bolt text-litePink text-3xl mb-3" aria-hidden="true"></i>
+                                <p>Fast Turnaround</p>
+                            </li>
+                            <li class="text-center bg-white shadow-xl rounded-lg p-5 font-semibold text-gray-900">
+                                <i class="fa-solid fa-circle-check text-litePink text-3xl mb-3" aria-hidden="true"></i>
+                                <p>100% Accuracy Guarantee</p>
+                            </li>
+                            <li class="text-center bg-white shadow-xl rounded-lg p-5 font-semibold text-gray-900">
+                                <i class="fa-solid fa-stamp text-litePink text-3xl mb-3" aria-hidden="true"></i>
+                                <p>State of California Apostille</p>
+                            </li>
+                            <li class="text-center bg-white shadow-xl rounded-lg p-5 font-semibold text-gray-900">
+                                <i class="fa-solid fa-globe text-litePink text-3xl mb-3" aria-hidden="true"></i>
+                                <p>International Use</p>
+                            </li>
+                        </ul>
+                    </section>
+
+                    {{-- Documents We Apostille --}}
+                    <section aria-labelledby="apostille-documents-heading">
+                        <div class="text-center mb-8 sm:mb-10">
+                            <h2 id="apostille-documents-heading"
+                                class="text-xl sm:text-2xl md:text-3xl font-semibold title-font text-gray-900 mb-2">
+                                Documents We Apostille
+                            </h2>
+                            <div class="flex justify-center">
+                                <div class="w-16 h-0.5 rounded-full bgED9393 inline-flex"></div>
+                            </div>
+                        </div>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-0 m-0">
+                            <li class="bg-white shadow-lg rounded-lg px-5 py-4 font-semibold text-gray-900 flex items-center gap-3">
+                                <i class="fa-solid fa-baby text-litePink text-xl" aria-hidden="true"></i>
+                                <span>Birth Certificates</span>
+                            </li>
+                            <li class="bg-white shadow-lg rounded-lg px-5 py-4 font-semibold text-gray-900 flex items-center gap-3">
+                                <i class="fa-solid fa-heart text-litePink text-xl" aria-hidden="true"></i>
+                                <span>Marriage Certificates</span>
+                            </li>
+                            <li class="bg-white shadow-lg rounded-lg px-5 py-4 font-semibold text-gray-900 flex items-center gap-3">
+                                <i class="fa-solid fa-file-signature text-litePink text-xl" aria-hidden="true"></i>
+                                <span>Power of Attorney</span>
+                            </li>
+                            <li class="bg-white shadow-lg rounded-lg px-5 py-4 font-semibold text-gray-900 flex items-center gap-3">
+                                <i class="fa-solid fa-graduation-cap text-litePink text-xl" aria-hidden="true"></i>
+                                <span>Diplomas &amp; Transcripts</span>
+                            </li>
+                            <li class="bg-white shadow-lg rounded-lg px-5 py-4 font-semibold text-gray-900 flex items-center gap-3">
+                                <i class="fa-solid fa-fingerprint text-litePink text-xl" aria-hidden="true"></i>
+                                <span>FBI Documents</span>
+                            </li>
+                            <li class="bg-white shadow-lg rounded-lg px-5 py-4 font-semibold text-gray-900 flex items-center gap-3">
+                                <i class="fa-solid fa-briefcase text-litePink text-xl" aria-hidden="true"></i>
+                                <span>Business Documents</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    {{-- Apostille Process --}}
+                    <section aria-labelledby="apostille-process-heading">
+                        <div class="text-center shadow-xl w-full mx-auto rounded py-2.5 bgED9393 mb-8 sm:mb-10">
+                            <h2 id="apostille-process-heading"
+                                class="text-white text-lg sm:text-xl md:text-2xl font-bold tracking-wider px-2">
+                                Apostille Process
+                            </h2>
+                        </div>
+                        <ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 list-none p-0 m-0">
+                            <li>
+                                <article class="relative bg-white shadow-2xl rounded-xl p-6 text-center h-full">
+                                    <span
+                                        class="absolute -top-4 left-1/2 -translate-x-1/2 flex h-9 w-9 items-center justify-center rounded-full bgED9393 text-white font-bold text-base"
+                                        aria-hidden="true">1</span>
+                                    <i class="fa-solid fa-magnifying-glass text-litePink text-2xl mt-4 mb-3"
+                                        aria-hidden="true"></i>
+                                    <h3 class="text-gray-900 text-base font-semibold title-font mb-2">Document Review</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed">We review your documents for requirements.</p>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="relative bg-white shadow-2xl rounded-xl p-6 text-center h-full">
+                                    <span
+                                        class="absolute -top-4 left-1/2 -translate-x-1/2 flex h-9 w-9 items-center justify-center rounded-full bgED9393 text-white font-bold text-base"
+                                        aria-hidden="true">2</span>
+                                    <i class="fa-solid fa-file-signature text-litePink text-2xl mt-4 mb-3"
+                                        aria-hidden="true"></i>
+                                    <h3 class="text-gray-900 text-base font-semibold title-font mb-2">Notarization (If needed)</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed">Documents are notarized if required.</p>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="relative bg-white shadow-2xl rounded-xl p-6 text-center h-full">
+                                    <span
+                                        class="absolute -top-4 left-1/2 -translate-x-1/2 flex h-9 w-9 items-center justify-center rounded-full bgED9393 text-white font-bold text-base"
+                                        aria-hidden="true">3</span>
+                                    <i class="fa-solid fa-stamp text-litePink text-2xl mt-4 mb-3" aria-hidden="true"></i>
+                                    <h3 class="text-gray-900 text-base font-semibold title-font mb-2">State Apostille</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed">We obtain apostille from the California Secretary of State.</p>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="relative bg-white shadow-2xl rounded-xl p-6 text-center h-full">
+                                    <span
+                                        class="absolute -top-4 left-1/2 -translate-x-1/2 flex h-9 w-9 items-center justify-center rounded-full bgED9393 text-white font-bold text-base"
+                                        aria-hidden="true">4</span>
+                                    <i class="fa-solid fa-truck text-litePink text-2xl mt-4 mb-3" aria-hidden="true"></i>
+                                    <h3 class="text-gray-900 text-base font-semibold title-font mb-2">Deliver to You</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed">Documents are returned safely via mail or pickup.</p>
+                                </article>
+                            </li>
+                        </ol>
+                    </section>
+
+                    {{-- Legal documents cross-link --}}
+                    <section aria-labelledby="legal-documents-cta-heading">
+                        <div class="bg-white shadow-2xl rounded-xl p-6 sm:p-8 text-center border-l-4 border-litePink">
+                            <h2 id="legal-documents-cta-heading"
+                                class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-3">
+                                Need Help Preparing Legal Documents?
+                            </h2>
+                            <p class="text-gray-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-6">
+                                If you need Power of Attorney, Trusts, or Estate Planning documents for international use, we can help.
+                            </p>
+                            <a href="/https://www.galeranchwilltrust.com/" target="_blank"
+                                class="inline-flex items-center justify-center bg-litePink text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-lg hover:bg-teal-500 transition">
+                                Visit Gale Ranch Will &amp; Trust
+                            </a>
+                        </div>
+                    </section>
+
+                    {{-- FAQ --}}
+                    <section aria-labelledby="apostille-faq-heading">
+                        <div class="text-center mb-8 sm:mb-10">
+                            <h2 id="apostille-faq-heading"
+                                class="text-xl sm:text-2xl md:text-3xl font-semibold title-font text-gray-900 mb-2">
+                                Frequently Asked Questions
+                            </h2>
+                            <div class="flex justify-center">
+                                <div class="w-16 h-0.5 rounded-full bgED9393 inline-flex"></div>
+                            </div>
+                        </div>
+                        <div class="max-w-3xl mx-auto w-full" x-data="{ selected: null }">
+                            <ul class="space-y-3 sm:space-y-4 list-none p-0 m-0">
+                                @foreach ([
+                                    ['id' => 1, 'q' => 'What is an apostille?', 'a' => 'An apostille is a form of authentication issued to documents for use in countries that participate in the Hague Convention of 1961. It provides a uniform method of validating documents for use in foreign countries.'],
+                                    ['id' => 2, 'q' => 'How long does apostille take?', 'a' => 'Processing time depends on document type and Secretary of State workload. Standard service typically takes several business days; expedited options may be available. Contact us for a current timeline.'],
+                                    ['id' => 3, 'q' => 'Do all countries accept apostille?', 'a' => 'No. Apostilles are accepted only in countries that are members of the Hague Apostille Convention. Countries that are not members may require embassy legalization instead.'],
+                                ] as $faq)
+                                <li class="bg-silver rounded-sm overflow-hidden">
+                                    <button type="button" class="w-full px-4 sm:px-6 py-4 text-left"
+                                        @click="selected !== {{ $faq['id'] }} ? selected = {{ $faq['id'] }} : selected = null"
+                                        :aria-expanded="selected === {{ $faq['id'] }}">
+                                        <div class="flex items-center justify-between gap-3 text-white">
+                                            <span class="text-sm sm:text-base font-medium text-left">{{ $faq['q'] }}</span>
+                                            <i class="fa-solid fa-angles-down text-sm sm:text-lg shrink-0"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </button>
+                                    <div class="overflow-hidden bg-white transition-all duration-500"
+                                        :class="selected === {{ $faq['id'] }} ? 'max-h-48 py-4 px-4 sm:px-6' : 'max-h-0'">
+                                        <p class="text-gray-700 text-sm sm:text-base leading-relaxed">{{ $faq['a'] }}</p>
+                                    </div>
+                                </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </section>
+
+                    {{-- Related Services --}}
+                    <section aria-labelledby="apostille-related-heading" class="pb-4 sm:pb-8">
+                        <div class="text-center mb-8 sm:mb-10">
+                            <h2 id="apostille-related-heading"
+                                class="text-xl sm:text-2xl md:text-3xl font-semibold title-font text-gray-900 mb-2">
+                                Related Services
+                            </h2>
+                            <div class="flex justify-center">
+                                <div class="w-16 h-0.5 rounded-full bgED9393 inline-flex"></div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <a href="/mobile-notary"
+                                class="text-center bg-white shadow-xl rounded-lg p-5 font-semibold text-gray-900 hover:text-litePink transition">
+                                <i class="fa-solid fa-car-side text-litePink text-2xl mb-3" aria-hidden="true"></i>
+                                <p>Mobile Notary</p>
+                            </a>
+                            <a href="/document-notarization"
+                                class="text-center bg-white shadow-xl rounded-lg p-5 font-semibold text-gray-900 hover:text-litePink transition">
+                                <i class="fa-solid fa-file-circle-check text-litePink text-2xl mb-3" aria-hidden="true"></i>
+                                <p>Document Notarization</p>
+                            </a>
+                            <a href="/POAGaleRanchNotary"
+                                class="text-center bg-white shadow-xl rounded-lg p-5 font-semibold text-gray-900 hover:text-litePink transition">
+                                <i class="fa-solid fa-file-signature text-litePink text-2xl mb-3" aria-hidden="true"></i>
+                                <p>Power of Attorney Notary</p>
+                            </a>
+                            <a href="/mobile-notary"
+                                class="text-center bg-white shadow-xl rounded-lg p-5 font-semibold text-gray-900 hover:text-litePink transition">
+                                <i class="fa-solid fa-location-dot text-litePink text-2xl mb-3" aria-hidden="true"></i>
+                                <p>Traveling Notary</p>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+
                 <svg class="absolute top-0 left-0 z-0 w-32 h-32 -mt-12 -ml-12 text-gray-500 fill-current"
                     viewBox="0 0 91 91" xmlns="http://www.w3.org/2000/svg">
                     <g stroke="none" stroke-width="1" fill-rule="evenodd">

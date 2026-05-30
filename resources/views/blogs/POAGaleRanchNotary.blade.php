@@ -36,13 +36,15 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
-        <!-- Google tag (gtag.js) -->
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TGK99DB0N"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-7TGK99DB0N');
@@ -188,24 +190,29 @@
                             Ave, Fremont and we will take care of both Notary and Witness part.</li>
                     </ul>
 
-                    <p class="md:text-base text-sm font-medium mt-2 md:px-5 px-2"> We do offer apostille services - weekly visiting Sacramento Secretary of State.</a>
+                    <p class="md:text-base text-sm font-medium mt-2 md:px-5 px-2"> We do offer apostille services -
+                        weekly visiting Sacramento Secretary of State.</a>
                     </p>
 
                     <p class="md:text-lg text-base font-medium mt-4 px-5"> – <span class='text-blue-600'>
-                        Govind Gopal,(925) 322 3131 &nbsp; &nbsp; &nbsp;<a href='mailto:govind@galeranchnotary.com'
-                            class='underline'>Govind@GaleRanchNotary.com</a></span><br>Gale Ranch
-                    Notary, Apostille and Financial
-                    Services</a>
-                </p>
-                   
+                            Govind Gopal,(925) 322 3131 &nbsp; &nbsp; &nbsp;<a href='mailto:govind@galeranchnotary.com'
+                                class='underline'>Govind@GaleRanchNotary.com</a></span><br>Gale Ranch
+                        Notary, Apostille and Financial
+                        Services</a>
+                    </p>
+
                 </div>
                 <x-subscribeButton></x-subscribeButton>
                 <div class="md:px-5 py-8 flex justify-between border-y-2 w-full sm:text-base text-sm">
-                    <a href="/life-insurance-tips"
-                        class="text-gray-100 bg-orange-800 px-4 py-2 rounded-md"><i
+                    <a href="/life-insurance-tips" class="text-gray-100 bg-orange-800 px-4 py-2 rounded-md"><i
                             class="fa-solid fa-chevron-left mr-1"></i>Previous Post</a>
-                    
+
+                    <a href="/beneficiary-designations-override-your-Will-or-Trust"
+                        class="bg-orange-800 text-white px-4 py-2 rounded-md">Next
+                        Post<i class="fa-solid fa-chevron-right ml-1"></i></a>
+
                 </div>
+
             </div>
 
             <x-blogCommentForm></x-blogCommentForm>

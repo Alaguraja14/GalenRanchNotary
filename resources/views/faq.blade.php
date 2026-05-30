@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <title>Frequently Asked Questions – FAQ | Gale Ranch Notary
+    <title>Notary & Apostille FAQ | Gale Ranch
     </title>
     <link rel="icon" type="image/x-icon" href="images\Logo.png">
     <link rel=“canonical” href=“https://www.galeranchnotary.com/” />
@@ -12,8 +12,7 @@
     <meta property="og:site_name" content="Gale Ranch Notary">
     <meta property="og:title" content="Gale Ranch Notary">
     <meta property="og:description"
-        content="Expert answers to FAQs on Apostille, Trusts, Immigration & Financial Services. 
-    Get informed today!">
+        content="Find answers about mobile notary services, apostille processing, loan signing, and notarization requirements.">
     <meta property="og:image" content="https://www.galeranchnotary.com/images/Banner.png">
     <meta property="og:type" content="website" />
     <meta property="og:image:type" content="image/png">
@@ -21,8 +20,7 @@
     <meta property="og:image:height" content="576">
     <meta property="og:url" content="https://www.galeranchnotary.com/">
     <meta name="description"
-        content="Expert answers to FAQs on Apostille, Trusts, Immigration & Financial Services. 
-        Get informed today!">
+        content="Find answers about mobile notary services, apostille processing, loan signing, and notarization requirements.">
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Martel' rel='stylesheet'>
@@ -89,45 +87,7 @@
 
 <body class="antialiased">
     <main class="w-full backgroundGradient shadow-lg pb-20">
-        <x-logo></x-logo>
-        <div class="w-11/12 mx-auto py-2 mt-4 bgFFFDFD shadow-lg rounded-lg">
-            <div class="w-full text-gray-700 bg-white">
-                <div x-data="{ open: false }"
-                    class="flex flex-col lg:w-8/12 md:w-10/12 px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-                    <div class="p-4 flex flex-row items-center justify-end">
-                        <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
-                            @click="open = !open">
-                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                                <path x-show="!open" fill-rule="evenodd"
-                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                    clip-rule="evenodd"></path>
-                                <path x-show="open" fill-rule="evenodd"
-                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <nav :class="{ 'flex': open, 'hidden': !open }"
-                        class="w-7/12 mx-auto flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-between md:flex-row">
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/">Home</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/apostille-service">Apostille Services</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/services">Services</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/review">Reviews</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0"
-                            href="/blog">Blog</a>
-                        <a class="leading-6 hover:animate-bounce tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm textED9393 font-semibold md:mt-0"
-                            href="/faq">FAQ</a>
-                        <a class="leading-6 tracking-wider hover:text-litePink px-4 py-2 mt-2 text-sm text-gray-900 md:mt-0 hover:animate-bounce"
-                            href="/contactUs">Contact Us</a>
-                    </nav>
-                </div>
-            </div>
-
-        </div>
+        <x-site-header active="faq" nav-width="lg:w-8/12 md:w-10/12" />
         <section class="w-11/12 mx-auto ">
             <div class="text-center shadow-xl w-11/12 mx-auto rounded py-2.5 bgED9393 my-4">
                 <h1 class="text-white md:text-2xl text-xl font-bold tracking-wider">FAQ</h1>

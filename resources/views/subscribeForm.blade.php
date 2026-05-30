@@ -8,7 +8,7 @@
     <link rel=“canonical” href=“https://www.galeranchnotary.com/” />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index,follow" />
+    <meta name="robots" content="noindex,follow" />
     <meta property="og:site_name" content="Gale Ranch Notary">
     <meta property="og:title" content="Gale Ranch Notary">
     <meta property="og:description"
@@ -89,7 +89,7 @@
 </head>
 
 <body class="antialiased">
-    <x-blogHeader></x-blogHeader>
+    <x-blogHeader active="subscribe" />
     <!-- component -->
     <section class=" lg:py-20 -mt-40">
         <div class="flex flex-col items-center justify-between w-full px-10 pt-5 pb-20 lg:pt-0 lg:flex-row">
